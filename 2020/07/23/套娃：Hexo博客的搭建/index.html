@@ -85,7 +85,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">509</span>
+            <span class="post-count">510</span>
         </span>
     </span>
 
@@ -109,23 +109,44 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="一些废话"><a href="#一些废话" class="headerlink" title="一些废话"></a>一些废话</h1><p> 打算搭建一个自己的个人博客来记录自己的学习过程，在精挑细选（随便看看）之后觉得Hexo非常简单易用，功能也比较强大，故选择了ta。下面是一些自己的搭建过程：  </p>
+  <h1>一些废话</h1>
+<p>打算搭建一个自己的个人博客来记录自己的学习过程，在精挑细选（随便看看）之后觉得Hexo非常简单易用，功能也比较强大，故选择了ta。下面是一些自己的搭建过程：</p>
 <hr>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="本地"><a href="#本地" class="headerlink" title="本地"></a>本地</h2><p>开始打算直接在Windows下进行部署，然鹅在npm处遇到一些问题，遂改用wsl，在Debian中装上npm和nodejs就行<br><code>sudo apt install nodejs npm</code><br>之后安装hexo-cli（高手直接上hexo）<br><code>npm install -g hexo-cli</code><br>安装好之后可以测试一下<br><code>npx hexo</code><br>如果想更方便一点就把环境变量加上（由于我用fish，所以这里有点不一样）<br><code>echo &#39;set PATH &quot;$PATH:./node_modules/.bin&quot;&#39; &gt;&gt; ~/.config/fish/config.fish</code></p>
-<h2 id="远程"><a href="#远程" class="headerlink" title="远程"></a>远程</h2><ul>
-<li><p>GitHub：墙裂推荐，除了网速有点捉急其他都很完美，<br>只要配置好ssh密钥验证就可以使用。建立一个仓库&lt;用户名&gt;.github.io作为网站的远程仓库。</p>
+<h1>安装</h1>
+<ul>
+<li>本地<br>
+开始打算直接在Windows下进行部署，然鹅在npm处遇到一些问题，遂改用wsl，在Debian中装上npm和nodejs就行<br>
+<code>sudo apt install nodejs npm</code><br>
+之后安装hexo-cli（高手直接上hexo）<br>
+<code>npm install -g hexo-cli</code><br>
+安装好之后可以测试一下<br>
+<code>npx hexo</code><br>
+如果想更方便一点就把环境变量加上（由于我用fish，所以这里有点不一样）<br>
+<code>echo 'set PATH &quot;$PATH:./node_modules/.bin&quot;' &gt;&gt; ~/.config/fish/config.fish</code></li>
+<li>远程
+<ul>
+<li>
+<p>GitHub：墙裂推荐，除了网速有点捉急其他都很完美，<br>
+只要配置好ssh密钥验证就可以使用。建立一个仓库&lt;用户名&gt;.github.io作为网站的远程仓库。</p>
 </li>
-<li><p>Gitee：有一个非常严重的缺陷，每次推送网页之后不会立即更新页面，需要自己手动更新，配置方法和上面一样。  </p>
-<p>  Tip：多两个网页可以同时部署</p>
+<li>
+<p>Gitee：有一个非常严重的缺陷，每次推送网页之后不会立即更新页面，需要自己手动更新，配置方法和上面一样。</p>
+<p>Tip：多两个网页可以同时部署</p>
+</li>
+</ul>
 </li>
 </ul>
 <hr>
-<h1 id="部署及配置"><a href="#部署及配置" class="headerlink" title="部署及配置"></a>部署及配置</h1><ul>
-<li>首先新建一个目录并且初始化<br><code>hexo init &lt;dir&gt;</code><br>修改一下配置文件 _config.yml,主要改名字、网址以及deploy下的子项，完成之后也就可以运行 <code>hexo s</code> 试一下效果，在浏览器中能看到页面就说明本地没啥问题，再执行 <code>hexo d</code> 推送到GitHub，检查自己的网站能否访问。</li>
+<h1>部署及配置</h1>
+<ul>
+<li>首先新建一个目录并且初始化<br>
+<code>hexo init &lt;dir&gt;</code><br>
+修改一下配置文件 _config.yml,主要改名字、网址以及deploy下的子项，完成之后也就可以运行 <code>hexo s</code> 试一下效果，在浏览器中能看到页面就说明本地没啥问题，再执行 <code>hexo d</code> 推送到GitHub，检查自己的网站能否访问。</li>
 <li>接下来可以修改主题，到<a href="https://hexo.io/themes/" target="_blank" rel="noopener">这里</a>寻找自己心仪的主题，然后clone到themes目录下修改_config.yml就可以应用啦。这里我选择了<a href="https://gitee.com/shen-yu/hexo-theme-ayer" target="_blank" rel="noopener">ayer</a>，感谢大佬的开源项目。我之后可能打算自己写一个主题。</li>
 </ul>
 <hr>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>万事俱备，接下来就可以写文章啦。<code>hexo new &lt;title&gt;</code>就能新建一篇默认格式的文章。Enjoy it！</p>
+<h1>使用</h1>
+<p>万事俱备，接下来就可以写文章啦。<code>hexo new &lt;title&gt;</code>就能新建一篇默认格式的文章。Enjoy it！</p>
  
       <!-- reward -->
       
