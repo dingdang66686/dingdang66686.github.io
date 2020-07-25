@@ -238,6 +238,12 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/></svg></span></s
 build一下就可以得到最小的镜像了，运行<code>docker run -it -p 4000:4000 -v blog-dir:/blog image-name</code>创建容器，进入后配置好ssh密钥，在当前目录按照默认的hexo教程配置即可。</li>
 <li>当然我预先构建好了一个镜像，欢迎拉取<code>dingdang66686/hexo</code></li>
 </ul>
+<hr>
+<ul>
+<li>另外记录一下vscode默认使用docker中终端方法，需要在hexo目录下新建工作区并且添加脚本文件<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker start hexo &gt; /dev/null</span><br><span class="line">docker attach hexo</span><br></pre></td></tr></table></figure>
+只要在shell的启动参数中加上这两行代码即可，不过退出终端比较麻烦，需要输入exit，否则容器不会停止运行。<br>
+解决方法：暂未找到。。。等待后续解决</li>
+</ul>
 ]]></content>
       <tags>
         <tag>工具</tag>
