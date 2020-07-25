@@ -46,6 +46,34 @@
   </entry>
   
   <entry>
+    <title>在docker中部署hexo环境</title>
+    <link href="http://dingdang66686.github.io/2020/07/25/%E5%9C%A8docker%E4%B8%AD%E9%83%A8%E7%BD%B2hexo%E7%8E%AF%E5%A2%83/"/>
+    <id>http://dingdang66686.github.io/2020/07/25/%E5%9C%A8docker%E4%B8%AD%E9%83%A8%E7%BD%B2hexo%E7%8E%AF%E5%A2%83/</id>
+    <published>2020-07-25T00:05:07.000Z</published>
+    <updated>2020-07-25T08:27:09.696Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;感觉在wsl中部署node非常浪费，因此冒出了把环境转移到  docker中的想法，在查找了网络上有关资料之后自己编写了一个Dockerfile实现了最小的hexo环境&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="工具" scheme="http://dingdang66686.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="hexo" scheme="http://dingdang66686.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>markdown中的数学公式——Latex语法学习</title>
     <link href="http://dingdang66686.github.io/2020/07/24/markdown%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E2%80%94%E2%80%94Latex%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"/>
     <id>http://dingdang66686.github.io/2020/07/24/markdown%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E2%80%94%E2%80%94Latex%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</id>

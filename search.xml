@@ -230,4 +230,18 @@ c124.7 8 235 61.7 331 161 31.3 33.3 59.7 72.7 85 118l7 13v35z'/></svg></span></s
         <tag>Latex</tag>
       </tags>
   </entry>
+  <entry>
+    <title>在docker中部署hexo环境</title>
+    <url>/2020/07/25/%E5%9C%A8docker%E4%B8%AD%E9%83%A8%E7%BD%B2hexo%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<ul>
+<li>感觉在wsl中部署node非常浪费，因此冒出了把环境转移到  docker中的想法，在查找了网络上有关资料之后自己编写了一个Dockerfile实现了最小的hexo环境<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"><span class="keyword">FROM</span> node:alpine</span><br><span class="line"><span class="keyword">MAINTAINER</span> dingdang66686 &lt;dingdang66686@outlook.com&gt;</span><br><span class="line"><span class="keyword">RUN</span><span class="bash"> sed -i <span class="string">"s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g"</span> /etc/apk/repositories &amp;&amp; apk add git openssh &amp;&amp; npm install hexo-cli -g</span></span><br><span class="line"><span class="keyword">VOLUME</span><span class="bash"> /blog</span></span><br><span class="line"><span class="keyword">WORKDIR</span><span class="bash"> /blog</span></span><br><span class="line"><span class="keyword">EXPOSE</span> <span class="number">4000</span></span><br><span class="line"><span class="keyword">CMD</span><span class="bash"> /bin/ash</span></span><br></pre></td></tr></table></figure>
+build一下就可以得到最小的镜像了，运行<code>docker run -it -p 4000:4000 -v blog-dir:/blog image-name</code>创建容器，进入后配置好ssh密钥，在当前目录按照默认的hexo教程配置即可。</li>
+<li>当然我预先构建好了一个镜像，欢迎拉取<code>dingdang66686/hexo</code></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>工具</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
 </search>
